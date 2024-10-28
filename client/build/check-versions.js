@@ -24,7 +24,7 @@ if (shell.which('npm')) {
   })
 }
 
-module.exports = function () {
+const checkVersions = function () {
   const warnings = []
 
   for (let i = 0; i < versionRequirements.length; i++) {
